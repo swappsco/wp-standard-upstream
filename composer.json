@@ -1,0 +1,34 @@
+{
+    "name": "swappsco/wordpress-standard-upstream",
+    "type": "project",
+    "license": "MIT",
+    "description": "Wordpress standard upstream for Pantheon sites.",
+    "homepage": "https://pantheon.io/docs/guides/wordpress-composer",
+    "repositories": {
+        "wpackagist": {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
+        },
+        "private-packagist": {
+            "type": "composer",
+            "url": "https://repo.packagist.com/swappsco/"
+        }
+      },
+    "require": {
+        "cocur/slugify": "^4.2",
+        "composer/installers": "^2.1",
+        "sentry/sentry": "*",
+        "vlucas/phpdotenv": "^5.4",
+        "wpackagist-plugin/wp-sentry-integration": "*"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "php-http/discovery": true
+        }
+    }
+}
