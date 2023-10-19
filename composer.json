@@ -1,0 +1,12 @@
+{
+    "name": "swappsco/wp-standar-upstream",
+    "description": "Swapps WP Standard upstream",
+    "authors": [
+        {
+            "name": "swapps"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
